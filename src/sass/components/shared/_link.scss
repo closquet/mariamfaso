@@ -1,0 +1,12 @@
+.link{
+  color: $color5;
+  text-decoration: none;
+  font-weight: bold;
+  hyphens: none;
+
+  &:hover, &:focus{
+    color: $color5;
+    cursor: pointer;
+  }
+
+}

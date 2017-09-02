@@ -1,0 +1,11 @@
+.banner__top-bar{
+  display: flex;
+  justify-content: space-between;
+  transition: 0.4s;
+  height: 5.4444em;
+
+  &:hover{
+    height: 8.8888em;
+
+  }
+}

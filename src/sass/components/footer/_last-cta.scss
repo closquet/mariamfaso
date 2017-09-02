@@ -1,0 +1,17 @@
+.last-cta{
+  border-bottom: 10px $color1 solid;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+
+  & h2, & p{
+    text-shadow: 0em 0em 0.15em #000, 0em 0em 0.1em #000;
+  }
+
+  &--travels{
+    background: url(../images/deco/1_1792p.jpg) 50% 100%/cover no-repeat;
+  }
+  &--projects{
+    background: url(../images/deco/2_1792p.jpg) 50% 100%/cover no-repeat;
+  }
+}

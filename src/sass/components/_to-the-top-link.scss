@@ -1,0 +1,24 @@
+.to-the-top-link{
+  display: block;
+  text-indent: -15em;
+  height: 2em;
+  width: 2em;
+  overflow: hidden;
+  position: absolute;
+  bottom: .5em;
+  right: 3%;
+
+  &:after{
+    content: '\f062';
+    font-family: 'FontAwesome';
+    color: red;
+    position: absolute;
+    font-size: 2em;
+    top: -0.3em;
+    right: -6.5em;
+  }
+
+  @media (max-width: 500px){
+    font-weight: 400;
+  }
+}

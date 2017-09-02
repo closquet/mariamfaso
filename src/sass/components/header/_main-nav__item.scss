@@ -1,0 +1,32 @@
+.main-nav__item{
+  position: relative;
+  padding: 0 0 10px;
+
+  &--parent{
+
+    & > a:after{
+      content: '\f0d7';
+      font-family: FontAwesome;
+      margin-left: 0.4em;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    &:hover > a:after{
+      transform: rotate(90deg);
+    }
+  }
+
+  &:hover {
+
+    & > a{
+      color: $color5;
+    }
+
+    .main-nav__sub-links-list{
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+
+}

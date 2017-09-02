@@ -1,0 +1,16 @@
+.dons-btn{
+  background-color: $color2;
+  color: #000;
+  display: inline-block;
+  padding: 0.555em 2em;
+  text-decoration: none;
+  border-radius: 2em;
+  box-shadow: inset 0 -2px #ff7f00, 0 3px 10px -4px #000;
+  transition: 0.3s;
+  margin-top: 1.1em;
+
+  &:hover, &:focus{
+    background-color: lighten($color2, 10);
+    box-shadow: inset 0px -2px $color1, 0 3px 10px -4px #000 ;
+  }
+}

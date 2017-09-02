@@ -1,0 +1,24 @@
+.read-more{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  &:after{
+    content: ' \f061 ';
+    font-family: FontAwesome;
+    padding-left: 0.4em;
+  }
+
+  &:hover:after{
+    animation-name: read-more;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+  }
+}
+
+@keyframes read-more {
+  0% {transform: translatex(0);}
+  50% {transform: translatex(5px);}
+  100% {transform: translatex(0);}
+}

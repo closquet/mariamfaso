@@ -1,0 +1,87 @@
+
+@import "settings/core";
+
+
+@import "tools/mixins";
+
+
+@import "generic/reset";
+@import "generic/box-sizing";
+
+
+@import "components/required";
+@import "components/info-for-required";
+@import "components/field-container";
+@import "components/input-alert";
+@import "components/to-the-top-link";
+@import "components/page-title";
+
+@import "components/header/home";
+@import "components/header/banner__top-bar";
+@import "components/header/main-nav";
+@import "components/header/main-nav__links-list";
+@import "components/header/main-nav__item";
+@import "components/header/main-nav__link";
+@import "components/header/main-nav__sub-links-list";
+@import "components/header/main-nav__sub-links-list__item";
+@import "components/header/burger-menu";
+@import "components/header/slogan";
+@import "components/header/slogan__parts";
+@import "components/header/slogan__part1";
+@import "components/header/slogan__part2";
+@import "components/header/slogan__part3";
+@import "components/header/top-bar-container";
+@import "components/header/down-btn";
+@import "components/header/arian";
+@import "components/header/not-home";
+@import "components/header/site-logo";
+
+@import "components/shared/visually-hidden";
+@import "components/shared/wrap";
+@import "components/shared/dons-btn";
+@import "components/shared/btn";
+@import "components/shared/link";
+@import "components/shared/address__part";
+@import "components/shared/bloc";
+@import "components/shared/read-more";
+@import "components/shared/center";
+@import "components/shared/dark-btn";
+
+@import "components/footer/footer__item__title";
+@import "components/footer/footer__main-part__container";
+@import "components/footer/footer__item";
+@import "components/footer/last-cta";
+@import "components/footer/last-cta__content";
+@import "components/footer/footer__main-part";
+@import "components/footer/partner-logo";
+@import "components/footer/footer__copyright-part";
+
+@import "components/main/intro";
+@import "components/main/intro__content";
+@import "components/main/project-cta__article__thumbnail";
+@import "components/main/project-cta__article";
+@import "components/main/project-cta__container";
+@import "components/main/project-cta__article__date";
+@import "components/main/project-cta__article__teasing";
+
+
+@import "base/page";
+@import "base/paragraph";
+@import "base/title";
+@import "base/main";
+@import "base/footer";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

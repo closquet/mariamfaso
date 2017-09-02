@@ -1,0 +1,9 @@
+.footer__item{
+  width: 15.5555em;
+  margin-right: 3em;
+  margin-bottom: 1em;
+
+  @media (max-width: 1370px){
+    margin-right: 3%;
+  }
+}

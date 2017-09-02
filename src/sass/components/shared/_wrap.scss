@@ -1,0 +1,10 @@
+.wrap{
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 1460px) {
+    margin-left: 1.6666em;
+    margin-right: 1.6666em;
+  }
+}

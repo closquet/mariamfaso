@@ -1,0 +1,15 @@
+.btn{
+  padding: 1.14em 2em;
+  background-color: $color7;
+  text-decoration: none;
+  font-weight: 700;
+  color: $color8;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-top: 2em;
+
+  &:hover, &:focus{
+    background-color: $color6;
+    color: #000;
+  }
+}

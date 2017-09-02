@@ -1,0 +1,11 @@
+body{
+  font-family: $labour-font;
+  font-size: $global-font-size;
+  line-height: $global-line-height;
+  color: #000000;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+}

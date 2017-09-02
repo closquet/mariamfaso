@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700');
+
+/*
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+  url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+  url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+  url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+  url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$global-font-size: 18px;
+$global-line-height: 1.5;
+$box-space: 3.8888em;
+$labour-font: 'Montserrat';
+$title-font: 'Open Sans';
+
+$color1: #FF7F00;
+$color2: #FFD933;
+$color3: #CCCC52;
+$color4: #8FB259;
+$color5: #551f00;
+$color6: #f3ffe0;
+$color7: #E6EDFC;
+$color8: #333333;
+$color9: #5d6a99;

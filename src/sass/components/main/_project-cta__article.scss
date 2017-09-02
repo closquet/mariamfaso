@@ -1,0 +1,35 @@
+.project-cta__article{
+  width: 392px;
+  position: relative;
+  margin-bottom: 1.8em;
+  margin-right: 6.2222em;
+
+
+  &:nth-child(3n){
+    margin-right: 0;
+  }
+
+  @media (max-width:1450px) {
+    &:nth-child(3n) {
+      margin-right: 6.2222em;
+    }
+  }
+
+  @media (max-width:1366px){
+    &:nth-child(2n){
+      margin-right: 2em;
+    }
+  }
+
+  @media (max-width:750px) {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &{
+      margin-right: 0;
+    }
+  }
+}

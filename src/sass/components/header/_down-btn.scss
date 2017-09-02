@@ -1,0 +1,43 @@
+.down-btn{
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+
+  &:hover:after{
+    color: $color8;
+    text-shadow: #ffffff 0 0 5px;
+  }
+
+  &:after{
+    content: '\f0ab';
+    font-size: 2em;
+    font-family: FontAwesome;
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    width: 1em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 1em;
+    animation-delay: 1s;
+    animation-name: godown;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+
+
+
+    @media (max-height: 900px) {
+      bottom: initial;
+      top: 88vh;
+    }
+  }
+}
+
+@keyframes godown {
+  0% {transform: translatey(0);}
+  50% {transform: translatey(10px);}
+  100% {transform: translatey(0);}
+}
