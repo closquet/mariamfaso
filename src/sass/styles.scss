@@ -56,13 +56,22 @@
 @import "components/footer/partner-logo";
 @import "components/footer/footer__copyright-part";
 
-@import "components/main/intro";
-@import "components/main/intro__content";
-@import "components/main/project-cta__article__thumbnail";
-@import "components/main/project-cta__article";
-@import "components/main/project-cta__container";
-@import "components/main/project-cta__article__date";
-@import "components/main/project-cta__article__teasing";
+@import "components/accueil/intro";
+@import "components/accueil/intro__content";
+@import "components/accueil/project-cta";
+@import "components/accueil/project-cta__article";
+@import "components/accueil/project-cta__container";
+@import "components/accueil/project-cta__article__thumbnail";
+@import "components/accueil/project-cta__article__date";
+@import "components/accueil/project-cta__article__teasing";
+@import "components/accueil/_gallery-cta";
+
+@import "components/galerie/gallery";
+@import "components/galerie/ngg-galleryoverview";
+@import "components/galerie/ngg-gallery-thumbnail-box";
+@import "components/galerie/ngg-gallery-thumbnail";
+@import "components/galerie/ngg-navigation";
+@import "components/galerie/gallery__title";
 
 
 @import "base/page";

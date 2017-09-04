@@ -1,0 +1,13 @@
+.ngg-galleryoverview{
+  margin: 0 auto;
+  width: 1101px;
+  overflow: hidden;
+
+  @media (max-width:1162px){
+    width: 726px;
+  }
+
+  @media (max-width:800px){
+    width: 350px;
+  }
+}

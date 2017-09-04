@@ -16,47 +16,65 @@
                 <?= __('En savoir plus', 'fr'); ?>
             </a>
         </section>
-        <section aria-labelledby="project-cta__title" class="wrap bloc project-cta">
-            <h2 id="project-cta__title" role="heading" aria-level="2" class="page-title project-cta__title">
-                <?= __('Nos derniers projets', 'fr') . '&nbsp;?' ?>
-            </h2>
-            <div class="project-cta__container">
-	            <?php
-	            $projets = new WP_Query();
-	            $projets->query([
-		            'post_type' => 'projets',
-		            'showposts' => '3'
-	            ]);
-	            ?>
-	            <?php if( $projets->have_posts() ): while( $projets->have_posts() ): $projets->the_post(); ?>
-                    <article aria-labelledby="project-cta__article__title" class="project-cta__article">
-                        <h3 id="project-cta__article__title" role="heading" aria-level="3" class="page-title project-cta__article__title">
-				            <?php the_title(); ?>
-                        </h3>
-			            <?php the_post_thumbnail('my_thumbnail', ['class' => 'project-cta__article__thumbnail']); ?>
-                        <time class="project-cta__article__date" datetime="<?php ec_the_html_date_field('start_date') ; ?>">
-	                        <?php the_field('start_date') ; ?>
-                        </time>
-                        <p class="project-cta__article__teasing">
-	                        <?php the_field( 'teasing'); ?>
-                        </p>
-                        <a class="link read-more project-cta__article__link" href="<?= get_permalink() ?>">
-                            Voir le projet
-                            <span class="visually-hidden"> <?php the_title(); ?></span>
-                        </a>
-                    </article>
-	            <?php endwhile; else: ?>
-                    <p><?= __('Il n\'y a pas encore de projets', 'fr') ?></p>
-	            <?php endif; ?>
+
+        <section aria-labelledby="project-cta__title" class="project-cta">
+            <div class="wrap bloc">
+                <h2 id="project-cta__title" role="heading" aria-level="2" class="page-title project-cta__title">
+		            <?= __('Nos derniers projets', 'fr') . '&nbsp;?' ?>
+                </h2>
+                <div class="project-cta__container">
+		            <?php
+		            $projets = new WP_Query();
+		            $projets->query([
+			            'post_type' => 'projets',
+			            'showposts' => '3'
+		            ]);
+		            ?>
+		            <?php if( $projets->have_posts() ): while( $projets->have_posts() ): $projets->the_post(); ?>
+                        <article aria-labelledby="project-cta__article__title" class="project-cta__article">
+                            <h3 id="project-cta__article__title" role="heading" aria-level="3" class="page-title project-cta__article__title">
+					            <?php the_title(); ?>
+                            </h3>
+				            <?php the_post_thumbnail('my_thumbnail', ['class' => 'project-cta__article__thumbnail']); ?>
+                            <time class="project-cta__article__date" datetime="<?php ec_the_html_date_field('start_date') ; ?>">
+					            <?php the_field('start_date') ; ?>
+                            </time>
+                            <p class="project-cta__article__teasing">
+					            <?php the_field( 'teasing'); ?>
+                            </p>
+                            <a class="link read-more project-cta__article__link" href="<?= get_permalink() ?>">
+                                Voir le projet
+                                <span class="visually-hidden"> <?php the_title(); ?></span>
+                            </a>
+                        </article>
+		            <?php endwhile; else: ?>
+                        <p><?= __('Il n\'y a pas encore de projets', 'fr') ?></p>
+		            <?php endif; ?>
+                </div>
+                <div class="center">
+                    <a class="btn dark-btn project-cta__btn" href="/projets">
+			            <?= __('Tous les  projets', 'fr'); ?>
+                    </a>
+                </div>
             </div>
-            <div class="center">
-                <a class="btn dark-btn project-cta__btn" href="/projets">
-		            <?= __('Tous les  projets', 'fr'); ?>
-                </a>
-            </div>
-            
         </section>
-       
+
+        <section aria-labelledby="gallery-cta__title" class="galerie-cta">
+            <div class="wrap bloc">
+                <h2 id="galerie-cta__title" role="heading" aria-level="2" class="page-title galerie-cta__title">
+		            <?= __('En images', 'fr') ?>
+                </h2>
+                <div class="galerie-cta__container">
+		            <?= do_shortcode('[ngg_images gallery_ids="3" display_type="photocrati-nextgen_basic_thumbnails" maximum_entity_count=3 images_per_page=3 disable_pagination=1 order_by=imagedate order_direction=ASC]');?>
+                </div>
+                <div class="center">
+                    <a class="btn dark-btn project-cta__btn" href="/galerie">
+			            <?= __('Toutes les photos', 'fr'); ?>
+                    </a>
+                </div>
+            </div>
+        </section>
+
 
 
 <?php get_footer(); ?>

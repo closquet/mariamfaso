@@ -1,0 +1,27 @@
+.ngg-navigation{
+  text-align: center;
+  font-weight: 700;
+
+  .current{
+    color: #888;
+    padding: 0.3em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+  }
+
+  a{
+    padding: 0.3em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    text-decoration: none;
+    color: $color5;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+
+    &:hover,&:focus{
+      border-top: 3px solid $color5;
+      border-bottom: 3px solid $color5;
+      outline: none;
+    }
+  }
+}
