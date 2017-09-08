@@ -4,4 +4,10 @@
   max-width: 39em;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  @media (max-width:870px){
+    font-size: 1em;
+  }
 }

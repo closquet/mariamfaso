@@ -12,5 +12,8 @@
     "gulp-csso": "^2.0.0",
     "gulp-image": "^2.7.5",
     "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "parsleyjs": "^2.7.2"
   }
 }

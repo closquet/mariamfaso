@@ -1,0 +1,13 @@
+.contact-section__contact{
+  background-color: $color7;
+  margin-bottom: 3em;
+  width: 100%;
+  max-width: 19.4444em;
+  margin-right: 3em;
+  padding: 1em 0;
+
+  @media (max-width: 770px){
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+}

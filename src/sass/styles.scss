@@ -46,6 +46,7 @@
 @import "components/shared/read-more";
 @import "components/shared/center";
 @import "components/shared/dark-btn";
+@import "components/shared/parsley";
 
 @import "components/footer/footer__item__title";
 @import "components/footer/footer__main-part__container";
@@ -54,19 +55,40 @@
 @import "components/footer/last-cta__content";
 @import "components/footer/footer__main-part";
 @import "components/footer/partner-logo";
+@import "components/footer/social-logo";
 @import "components/footer/footer__copyright-part";
 
 @import "components/accueil/intro";
 @import "components/accueil/intro__content";
+@import "components/accueil/cta__title";
 @import "components/accueil/project-cta";
-@import "components/accueil/project-cta__article";
 @import "components/accueil/project-cta__container";
+@import "components/accueil/project-cta__article";
+@import "components/accueil/project-cta__article__title";
 @import "components/accueil/project-cta__article__thumbnail";
 @import "components/accueil/project-cta__article__date";
 @import "components/accueil/project-cta__article__teasing";
-@import "components/accueil/_gallery-cta";
 
-@import "components/galerie/gallery";
+@import "components/contact/contact-section";
+@import "components/contact/contact-section__intro";
+@import "components/contact/contact-section__contacts-list";
+@import "components/contact/contact-section__contact";
+@import "components/contact/contact-section__contact__name";
+@import "components/contact/contact-section__contact__job";
+@import "components/contact/contact-section__contact__image";
+@import "components/contact/contact-section__contact__address";
+@import "components/contact/contact-section__contact__email";
+@import "components/contact/contact-section__contact__tel";
+@import "components/contact/contact-section__contact-form-section__form-container";
+@import "components/contact/contact-section__contact-form-section__form";
+@import "components/contact/contact-section__contact-form-section__field-container";
+@import "components/contact/contact-section__contact-form-section__label";
+@import "components/contact/contact-section__contact-form-section__field";
+@import "components/contact/contact-section__contact-form-section__submit";
+@import "components/contact/contact-section__contact-form-section__image";
+@import "components/contact/contact-section__contact-form-section__sent";
+@import "components/contact/contact-section__contact-form-section__not-sent";
+
 @import "components/galerie/ngg-galleryoverview";
 @import "components/galerie/ngg-gallery-thumbnail-box";
 @import "components/galerie/ngg-gallery-thumbnail";
@@ -78,7 +100,6 @@
 @import "base/paragraph";
 @import "base/title";
 @import "base/main";
-@import "base/footer";
 
 
 

@@ -1,4 +1,33 @@
 .main-nav__links-list{
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 915px){
+    position: absolute;
+    left: -100vh;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,0);
+    color: #000000;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    transition: 0.7s;
+    display: initial;
+    height: 100vh;
+
+    li:not(.main-nav__item--parent){
+      display: list-item;
+      width: 100vw;
+    }
+  }
+}
+
+//checked
+
+.burger-menu-input:checked{
+
+  & ~ .main-nav__links-list{
+    background-color: $color10;
+    left: 1em;
+  }
 }

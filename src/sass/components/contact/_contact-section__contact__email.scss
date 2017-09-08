@@ -1,0 +1,21 @@
+.contact-section__contact__email{
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  position: relative;
+  padding-left: 1.5em;
+
+  &:before{
+    content: '\f0e0';
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000;
+    font-size: 0.8em;
+  }
+
+  @media (max-width: 330px){
+    font-size: 0.8888em;
+  }
+}

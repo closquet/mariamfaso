@@ -1,0 +1,16 @@
+.contact-section__contact-form-section__submit{
+  border: none;
+  font-family: $labour-font;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 1em 0;
+  width: 100%;
+  border-bottom: 3px solid transparent;
+  background-color: $color11;
+
+  &:focus, &:hover{
+    background-color: $color6;
+    outline: none;
+    border-bottom: 3px solid $color4;
+  }
+}

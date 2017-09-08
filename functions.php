@@ -6,6 +6,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'post-thumbnails' );
 	// additional image sizes
 	add_image_size( 'my_thumbnail', 392, 392, true );
+	add_image_size( 'membre', 350, 180, true );
 	add_image_size( 'title_image', 1919, 348, true );
 	
 }
@@ -199,6 +200,25 @@ function ec_init_types()
 		]
 	]);
 	
+	register_post_type('membres', [
+		'label' => 'Membres',
+		'labels' => [
+			'singular_name' => 'membre',
+			'add_new' => 'Ajouter un membre',
+			'all_items' => 'Tous les membres'
+		],
+		'description' => 'Permet de gérer la liste des membres officiels qui travaillent pour Mariam Faso',
+		'menu_position' => 7,
+		'public' => true,
+		'capability_type' => 'post',
+		'supports' => [
+			'title',
+			'editor',
+			'thumbnail',
+			'excerpt'
+		]
+	]);
+	
 }
 
 /*
@@ -320,7 +340,7 @@ function ec_the_excerpt($length = null)
  */
 function ec_fildarian(){
 	$def = "index";
-	$dPath = $_SERVER['REQUEST_URI'];
+	$dPath = strchr( $_SERVER['REQUEST_URI'], 'images') ? '/Galerie/' : $_SERVER['REQUEST_URI'];
 	$dChunks = explode("/", $dPath);
 	
 	echo('<a class="link" href="/">Accueil</a><span class="arian-sep">  >  </span>');
@@ -334,9 +354,9 @@ function ec_fildarian(){
 		if($i==count($dChunks)-2){
 			$prChunks = explode(".", $dChunks[$i]);
 			if ($prChunks[0] == $def) $prChunks[0] = "";
-			$prChunks[0] = $prChunks[0] . "</a>";
+			$prChunks[0] = ucfirst($prChunks[0]) . "</a>";
 		}
-		else $prChunks[0]=$dChunks[$i] . '</a><span class="dynNav">  >  </span>';
+		else $prChunks[0] = ucfirst($dChunks[$i]) . '</a><span class="dynNav">  >  </span>';
 		echo('">');
 		echo(str_replace("_" , " " , $prChunks[0]));
 	}

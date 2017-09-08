@@ -3,5 +3,14 @@
   padding-left: 4em;
   margin-top: 1.7em;
   transition: 0.4s;
+
+  @media (max-width: 915px) {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: -1.1em;
+    z-index: 1;
+    margin-top: 0;
+  }
 }
 

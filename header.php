@@ -15,14 +15,23 @@
 	    <?php wp_head(); ?>
     </head>
 
-    <body <?php //body_class(); ?>>
+    <body itemscope itemtype="http://schema.org/NGO" class="h-card " <?php //body_class(); ?>>
         <header role="banner" class="<?= $_SERVER['REQUEST_URI'] == '/' ? 'home' : 'not-home' ?>">
             <div class="top-bar-container">
                 <div class="wrap banner__top-bar">
-                    <h1 role="heading" aria-level="1" class="site-logo"><a class="site-logo-link" href="/"><img src="<?php ec_asset( 'images/logo/logo-site.svg' ); ?>" alt="Mariam Faso" width="90" height="90" title="Mariam Faso"></a></h1>
+                    <h1 role="heading" aria-level="1" class="site-logo"><a class="u-url site-logo-link" href="http://<?= $_SERVER['HTTP_HOST'] ?>"><img itemprop="logo" class="u-logo" src="<?php ec_asset( 'images/logo/logo-site.svg' ); ?>" alt="Mariam Faso" width="90" height="90" title="Mariam Faso ASBL"></a></h1>
+                    <meta itemprop="url" content="http://<?= $_SERVER['HTTP_HOST'] ?>">
                     <nav aria-labelledby="main-nav__title" role="navigation" class="main-nav">
                         <h2 id="main-nav__title" role="heading" aria-level="2" class="visually-hidden">Menu Principal</h2>
+                        <input type="checkbox" id="burger-menu" class="burger-menu-input">
+                        <label class="burger-menu-label" for="burger-menu">
+                            <span class="fa fa-bars burger-menu-open" aria-hidden="true"></span>
+                            <span class="fa fa-times burger-menu-close" aria-hidden="true"></span>
+                        </label>
                         <ul class="main-nav__links-list">
+                            <li class="main-nav__item">
+                                <a href="/" class="main-nav__link<?php echo ($_SERVER['REQUEST_URI'] == '/') ? ' main-nav__link--current-page' : '' ;?>">Accueil</a>
+                            </li>
 				            <?php foreach (ec_get_nav_items('header') as $item): ?>
                                 <li class="main-nav__item<?= $item->children ? ' main-nav__item--parent' : '' ?>">
                                     <a href="<?php echo $item->link;?>" class="main-nav__link<?php echo ($currenturl == $item->link) ? ' main-nav__link--current-page' : '' ;?>"><?php echo $item->label;?></a>
@@ -54,11 +63,11 @@
                         <span class="slogan__parts slogan__part1">Mariam Faso</span>
                         <span class="slogan__parts slogan__part2">ASBL relations nord-sud</span>
                         <span class="slogan__parts slogan__part3">Réalise et soutient des projets au Burkina Faso et au Maroc</span>
+                        <a class="dons-btn" href="/dons">Faire un don</a>
                     </p>
-                    <a class="dons-btn" href="/dons">Faire un don</a>
                 </div><!--wrap banner-wrap-->
-                <span id="down-target"></span>
                 <a class="down-btn" id="down" href="#down-target" title="Descendre pour voir la suite.">Descendre</a>
+                <span class="down-target" id="down-target"></span>
             <?php endif;?>
         </header>
         <main role="main" id="main" class="content">

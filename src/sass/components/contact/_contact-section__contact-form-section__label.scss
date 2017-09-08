@@ -1,0 +1,22 @@
+.contact-section__contact-form-section__label{
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 0.5em;
+  padding-top: 0.4em;
+  padding-bottom: 0.5em;
+  font-weight: 700;
+  color: $color5;
+  background-color: $color11;
+  width: 100%;
+  font-family: $title-font;
+
+  &:after{
+    content: '*';
+    color: $color13;
+    position: relative;
+    top: -5px;
+    left: 6px;
+    font-size: 0.8em;
+  }
+}

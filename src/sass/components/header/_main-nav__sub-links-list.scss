@@ -18,5 +18,9 @@
     top: -1.7222em;
     left: -7px;
 
+    @media (max-width: 915px){
+      content: initial;
+    }
+
   }
 }

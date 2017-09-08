@@ -1,4 +1,8 @@
 .slogan{
-  margin-top: 11em;
+  margin-top: 23vh;
   margin-bottom: 0;
+
+  @media (max-width:470px){
+    text-align: center;
+  }
 }

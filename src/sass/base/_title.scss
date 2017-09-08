@@ -2,16 +2,26 @@ h1,h2,h3,h4,h6{
   font-family: $title-font;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.7em;
 }
+
 
 h2{
   margin-top: -0.3879em;
   font-size: 2.25em;
-
 }
+
 
 h3{
   font-size: 1.5em;
-  margin-bottom: 0.9em;;
+}
+
+
+@media (max-width:870px){
+  h2{
+    font-size: 1.5em;
+  }
+  h3{
+    font-size: 1em;
+  }
 }

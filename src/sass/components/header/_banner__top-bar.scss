@@ -2,10 +2,18 @@
   display: flex;
   justify-content: space-between;
   transition: 0.4s;
-  height: 5.4444em;
+  min-height: 5.4444em;
 
   &:hover{
-    height: 8.8888em;
+    min-height: 8.8888em;
+  }
 
+  @media (max-width: 915px){
+    flex-direction: row-reverse;
+    min-height: initial;
+
+    &:hover{
+      min-height: initial;
+    }
   }
 }

@@ -1,0 +1,12 @@
+.contact-section__contact-form-section__form{
+  width: 100%;
+  max-width: 30em;
+  margin-right: 14.9em;
+
+  @media (max-width: 1465px) {
+    margin-right: 2em;
+  }
+  @media (max-width: 1215px) {
+    margin-right: 0;
+  }
+}

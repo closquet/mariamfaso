@@ -3,4 +3,8 @@
   border-top: 3px $color4 solid;
   border-bottom: 3px $color4 solid;
   padding: 0.6em 0;
+
+  @media (max-width: 915px){
+    display: none;
+  }
 }

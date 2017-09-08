@@ -1,3 +1,7 @@
 .not-home{
   min-height:8.5em;
+
+  @media (max-width: 915px){
+    min-height: 3.1em;
+  }
 }

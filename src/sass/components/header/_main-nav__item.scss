@@ -1,8 +1,9 @@
 .main-nav__item{
-  position: relative;
+
   padding: 0 0 10px;
 
   &--parent{
+    position: relative;
 
     & > a:after{
       content: '\f0d7';
@@ -28,5 +29,25 @@
       z-index: 1;
     }
   }
+
+  @media (max-width: 915px){
+    display: initial;
+    
+    & ul{
+      opacity: 1;
+      display: initial;
+      position: initial;
+    }
+
+    &--parent{
+      position: initial;
+
+      &>a{
+        display: none;
+      }
+    }
+
+  }
+
 
 }

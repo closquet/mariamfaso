@@ -1,0 +1,18 @@
+.contact-section__contact-form-section__field{
+  border: none;
+  padding-top: 3em;
+  padding-bottom: 0.4em;
+  padding-left: 0.5em;
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  border-bottom: 3px solid transparent;
+  resize: none;
+  font-family: $labour-font;
+
+  &:focus{
+    background-color: $color6;
+    outline: none;
+    border-bottom: 3px solid $color4;
+  }
+}
